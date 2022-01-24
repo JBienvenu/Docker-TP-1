@@ -40,7 +40,7 @@ Le but de ces manipulations est d'utiliser docker en ligne de commande afin de v
 Pour cette partie, vous aurez besoin de faire tourner l'application React blog-app.
 Une fois sur l'app, si vous vous rendez sur la page `Articles` une erreur devrait apparaître vous informant que l'application n'a pas pu récupérer les articles sur le réseau.
 L'appli React tente de récupérer les articles sur l'adresse `http://localhost:8000`.
-Le but de cet exercice est de lancer l'API express présente dans le dossier `expres-api` à l'aide de Docker.
+Le but de cet exercice est de lancer l'API express présente dans le dossier `express-api` à l'aide de Docker.
 
 Voici la liste des grandes étapes :
    - `build` le Dockerfile présent dans le dossier `express-api` et tagger l'image avec un nom explicite
