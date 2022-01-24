@@ -59,7 +59,7 @@ Le Dockerfile pour l'api python est situé dans le dossier `python-django/blogap
 Documentation pour l'image postgres: https://hub.docker.com/_/postgres/
 
 Voici quelques indices :
- - Il vous faudra deux containers capables de communiquer l'un avec l'autre. L'un d'entre eux sera basé sur l'image build par le Docker dans le dossier `python-django/blogapp`, l'autre devra utiliser l'image `postgres:14.2`
+ - Il vous faudra deux containers capables de communiquer l'un avec l'autre. L'un d'entre eux sera basé sur l'image build par le Dockerfile dans le dossier `python-django/blogapp`, l'autre devra utiliser l'image `postgres:14.2`
  - L'application django tente de communiquer avec une base données nommée `articles` suitée à l'adresse `articles`, via l'utilisateur `articles` et le mot de passe `articles`. Il n'est pas nécéssaire de modifier la moindre configuration, tout doit se faire au niveau de la configuration réseau des containers.
 
 Le résultat attendu est de pouvoir visualiser les articles sur l'application React.
