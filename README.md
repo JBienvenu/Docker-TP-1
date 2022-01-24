@@ -20,7 +20,7 @@ npm run start
 Le but de ces manipulations est d'utiliser docker en ligne de commande afin de vous familiariser. Il est possible de réaliser ces opérations via le dashboard Docker Desktop mais il y a moins d'intérêt.
 
 À l'aide de la documentation docker et de vos connaissances, trouvez les commandes Docker pour effectuer les actions suivantes :
- - Télécharger l'image `postgres` avec le tag `14.2`. Quelle commande peut-on utiliser pour vérifier le téléchargement ?
+ - Télécharger l'image `postgres` avec le tag `14.1`. Quelle commande peut-on utiliser pour vérifier le téléchargement ?
  - Après un rapide changement d'avis, supprimez l'image que vous venez de télécharger
  - Lancer un container interactif avec l'image `alpine`. Cela devrait vous permettre d'accéder à un terminal dans une machine linux alpine.
    - Tapez la commande `exit` dans le terminal du container. Le container va s'arrêter.
@@ -59,7 +59,7 @@ Le Dockerfile pour l'api python est situé dans le dossier `python-django/blogap
 Documentation pour l'image postgres: https://hub.docker.com/_/postgres/
 
 Voici quelques indices :
- - Il vous faudra deux containers capables de communiquer l'un avec l'autre. L'un d'entre eux sera basé sur l'image build par le Dockerfile dans le dossier `python-django/blogapp`, l'autre devra utiliser l'image `postgres:14.2`
+ - Il vous faudra deux containers capables de communiquer l'un avec l'autre. L'un d'entre eux sera basé sur l'image build par le Dockerfile dans le dossier `python-django/blogapp`, l'autre devra utiliser l'image `postgres:14.1`
  - L'application django tente de communiquer avec une base données nommée `articles` suitée à l'adresse `articles`, via l'utilisateur `articles` et le mot de passe `articles`. Il n'est pas nécéssaire de modifier la moindre configuration, tout doit se faire au niveau de la configuration réseau des containers.
 
 Le résultat attendu est de pouvoir visualiser les articles sur l'application React.
