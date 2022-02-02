@@ -75,7 +75,7 @@ Documentation pour l'image postgres: https://hub.docker.com/_/postgres/
 Vous aurez aussi besoin de bien lire la section network pour comprendre comment faire communiquer les containers: 
 https://docs.docker.com/engine/reference/commandline/run/#connect-a-container-to-a-network---network
 
-L'application django tente de communiquer avec une base données nommée `articles` suitée à l'adresse `articles`, via l'utilisateur `articles` et le mot de passe `articles`. Il n'est pas nécéssaire de modifier le moindre fichier de configuration de l'application, tout doit se faire au niveau de la configuration réseau des containers.
+L'application django tente de communiquer avec une base données nommée `articles` suitée à l'adresse `database`, via l'utilisateur `articles` et le mot de passe `articles`. Il n'est pas nécéssaire de modifier le moindre fichier de configuration de l'application, tout doit se faire au niveau de la configuration réseau des containers.
 
 15. Créer un `network` qui vous permettra de connecter les deux containers
 16. Créer un container pour la base de données PostgresQL et le démarrer dans le network que vous venez de créer. Assurez-vous de regarder la documentation de l'image Postgres pour créer la base de données et l'utilisateur souhaité.
