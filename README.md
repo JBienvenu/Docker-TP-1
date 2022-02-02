@@ -60,7 +60,7 @@ Documentation pour l'image postgres: https://hub.docker.com/_/postgres/
 
 Voici quelques indices :
  - Il vous faudra deux containers capables de communiquer l'un avec l'autre. L'un d'entre eux sera basé sur l'image build par le Dockerfile dans le dossier `python-django/blogapp`, l'autre devra utiliser l'image `postgres:14.1`
- - L'application django tente de communiquer avec une base données nommée `articles` suitée à l'adresse `articles`, via l'utilisateur `articles` et le mot de passe `articles`. Il n'est pas nécéssaire de modifier la moindre configuration, tout doit se faire au niveau de la configuration réseau des containers.
+ - L'application django tente de communiquer avec une base données nommée `articles` suitée à l'adresse `database`, via l'utilisateur `articles` et le mot de passe `articles`. Il n'est pas nécéssaire de modifier la moindre configuration, tout doit se faire au niveau de la configuration réseau des containers.
 
 Le résultat attendu est de pouvoir visualiser les articles sur l'application React.
 
